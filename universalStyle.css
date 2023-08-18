@@ -172,6 +172,12 @@ form input{
       width: 85%;
     }
 
+    form input{
+      margin: 1.5rem 0;
+      padding: 2rem 1.5rem;
+      font-size: 22px;
+    }
+
     form button{
       margin-top: 1rem;
     }

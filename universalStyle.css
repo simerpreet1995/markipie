@@ -162,6 +162,20 @@ form input{
       width: 300px !important;
     }
 
+    .form-container{
+      height: fit-content;
+      padding: 1.5rem;
+      /* border-radius: 20%; */
+    }
+
+    form{
+      width: 85%;
+    }
+
+    form button{
+      margin-top: 1rem;
+    }
+
 }
 
 

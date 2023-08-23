@@ -65,7 +65,7 @@
     <nav class="navbar navbar-expand-lg position-fixed text-center" style="width: 100%;" id="nav" style="z-index: 100;">
         <div class="container-fluid">
             <a class="navbar-brand px-5 mx-5" href="../index.html"><img style="width: 100px;" height="100px"
-                    class="img-fluid" src="../logo/Markipie-removebg-preview.png" alt=""></a>
+                    class="img-fluid" src="./logo/markipie-logo.png" alt="markipie digital marketing agency logo "></a>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto px-5 mx-2">
@@ -91,13 +91,7 @@
 
 
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+            
                     <li class="nav-item">
 
                         <div class="orix-btn">
@@ -113,7 +107,7 @@
 
     <!-- mobile nvabar -->
     <header class="mobile-nav">
-        <button class="btn btn-primary" style="position: fixed; right: 7px; z-index: 100; top: 2%;" type="button"
+        <button class="btn btn-primary" style="position: fixed; right: 7px; z-index: 100; top: 3%;" type="button"
             data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling">=</button>
 
@@ -121,7 +115,7 @@
             id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><img class="img-fluid"
-                        style="width: fit-content;" src="./logo/Markipie-removebg-preview.png" alt=""></h5>
+                        style="width: fit-content;" src="./logo/markipie-logo.png" alt="markipie digital marketing agency logo"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -148,13 +142,7 @@
 
 
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                 
                     <li class="nav-item">
 
 
@@ -168,14 +156,19 @@
 
 
     <!-- , url('./images/contact/milad-fakurian-58Z17lnVS4U-unsplash.jpg'); background-repeat: no-repeat; height: 65vh; width: 100%; background-position: center center; background-size: cover -->
-    <section style=" background:
-    url('./images/contact/top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg'); background-repeat: no-repeat; height: 75vh; width: 100%; background-position: right right; background-size: cover
-    ;">
+    <section style=" background: linear-gradient(
+        rgba(249, 244, 244, 0.2),
+        rgba(50, 50, 50, 0.4),
+        rgba(23, 22, 22, 0.4)
+
+      ),
+    url('./images/contact/markipie-contact-us.jpg'); background-repeat: no-repeat; height: 100vh; width: 100%; background-position: center center; background-size: cover
+    ;" role="img" aria-label="Markpie contact us to know more about services providing like website, graphic design, social media optimization and SEO">
 
         <div class="container ">
             <div class="row padding">
-                <div class="col-md-6  ">
-                    <h2 class="mb-3"> Got questions or ideas? </h2>
+                <div class="col-10 text-white">
+                    <h1 class="mb-5 mt-5"> Got Questions or Ideas? Contact Now To Grab Best Digital Marketing Deal</h1>
                     <h4>We'd love to hear from you. Our team is ready to assist you on your digital journey. Whether
                         it's about boosting your online presence, optimizing campaigns, or exploring new strategies,
                         we're here to help. Reach out today and let's create digital success together!</h4>
@@ -202,11 +195,11 @@
     <div class="container padding">
         <div class="row align-items-center justify-content-around gap-3">
             <div class="col-md-6">
-                <form action="" style="width: 80%;">
-                    <input type="text" placeholder="your Name">
-                    <input type="email" placeholder="Your Email" name="" id="">
-                    <input type="number" placeholder="Your Number" name="" id="">
-                    <textarea style="resize: none; outline: none; border: none; padding: 1rem; " name="" id=""
+                <form style="width: 80%;" autocomplete="on" method="post" class="contactPageMarkipie"  name="contactPageMarkipie">
+                    <input type="text" placeholder="Your Name" name="name" class="name" required>
+                    <input type="email" placeholder="Your Email" name="email" class="email"  required>
+                    <input type="number" placeholder="Your Number" name="number" class="number" required>
+                    <textarea style="resize: none; outline: none; border: none; padding: 1rem; " name="message" class="message"
                         placeholder="Type Message" cols="30" rows="10"></textarea>
 
                     <div class="orix-btn mt-3">
@@ -234,6 +227,58 @@
 
         </div> <!--row-->
     </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+   
+          $(".contactPageMarkipie").on('submit',function(e) {
+                 e.preventDefault();
+                 // create a new Date object
+        var now = new Date();
+   
+        var date = now.getDate(); // day of the month (1-31)
+        var month = now.getMonth() + 1; // month (0-11, add 1 to get the actual month number)
+        var year = now.getFullYear(); // four-digit year
+        var hours = now.getHours(); // hours (0-23)
+        var minutes = now.getMinutes(); // minutes (0-59)
+        var seconds = now.getSeconds(); // seconds (0-59)
+        
+        // display the date and time
+        var d=date + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+        
+                 var d=d;
+                 var website="https://www.markipie.com/";
+                 var from="markipie contact page";
+                 var name=$(".name").val();
+                 var number=$(".number").val();
+                 var email=$(".email").val();
+                 var message=$(".message").val();
+                 
+                $.post("https://script.google.com/macros/s/AKfycbwjD3cQiF-SEURwH8b5G_h6WGvQfcA1qKZKdbQPyEsfGCcPL5uz_SHKj9aVK3qQN_T9Tg/exec",{date:d,website:website,name:name,number:number,email:email,message:message,from:from},function(e) {
+                   if(e=="1"){
+                   
+                 
+                        alert("We received your message!");
+                        $("input,textarea").val("");
+                    
+
+                   }else{
+                    alert("Errow Occured!");
+                   }
+                 });
+              });
+        });
+
+</script>
+
+
+
     <!-- XX ===== XX ====== -->
 
 
@@ -246,7 +291,7 @@
   
                 <div class="social-contact">
                   <ul class="d-flex">
-                    <li><img class="img-fluid" style="width: 50px;" src="./logo/M-logo-removebg-preview.png" alt=""></li>
+                    <li><img class="img-fluid" style="width: 50px;" src="./logo/markipie-m-logo.png" alt="markipie digital marketing agency M logo"></li>
                     &nbsp;
                     <li>give a call <br>
                       <a href="tel:+918586000345">+918586000345</a>
@@ -281,7 +326,7 @@
   
             <div class="row py-2">
               <div class="col-md-3 p-0 m-0 ">
-                <img class="img-fluid mt-0 p-0 mx-3" src="./logo/Markipie-removebg-preview.png" alt=""
+                <img class="img-fluid mt-0 p-0 mx-3" src="./logo/markipie-logo.png" alt="markipie digital marketing agency logo"
                   style="width: 90px;">
                 <ul>
                   <li>Markipie is the best digital marketing agency in Delhi, Noida and Gurgaon. Contact Us and get top

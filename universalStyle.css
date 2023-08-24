@@ -136,21 +136,21 @@ form input{
 }
 
 
-@media screen and (min-width:1018px) {
-    .mobile-nav{
-      display: none !important;
-    }
-  
-    .f-col{
-      display: table-column;
-    }
-
-    .w-hundread{
-      width: 80%;
-    }
-
-   
+.whatsapp-button {
+  position: fixed;
+  bottom: 70px;
+  right: 7px;
+  z-index: 9999;
 }
+
+.whatsapp-button a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 
 @media screen and (max-width:634px) {
   
@@ -184,6 +184,9 @@ form input{
 
     form button{
       margin-top: 1rem;
+    }
+    .web-development-company{
+      margin-top: 3rem;
     }
 
 }

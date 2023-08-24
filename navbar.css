@@ -46,3 +46,12 @@ html{
 .offcanvas{
     width: 280px !important;
 }
+
+@media screen and (min-width:1018px) {
+    .mobile-nav{
+      display: none !important;
+    }
+
+
+   
+}
